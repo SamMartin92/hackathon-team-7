@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'rev_finance_2023']
+ALLOWED_HOSTS = ['localhost', 'hackathon-finrev-2023.herokuapp.com']
 
 SITE_ID = 1
 
@@ -137,7 +137,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-DISABLE_COLLECTSTATIC=1
+
 STATIC_URL = 'static/'
 
 # Default primary key field type
