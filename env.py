@@ -1,0 +1,2 @@
+SECRET_KEY= 'django-insecure-#wfd6et=4tal&nu#wgiyx@eq*6ks*iqch35_^**bdqit9f@fl#'
+DATABASE_URL = 'postgres://kmouvkcbrhwknd:231de17b931f4a9d931bc7b54c5198ab61841dea9f28e634310c1fd54afa96c1@ec2-34-248-169-69.eu-west-1.compute.amazonaws.com:5432/d3s716t4d4p41e'
