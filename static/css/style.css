@@ -5,3 +5,32 @@ body {
 #nav-title {
     color: aqua;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff6bd;
+}
+
+.hero-body {
+    background-color: #ceedc7;
+    margin: 30px;
+}
+
+.hero-image {
+    float: right;
+}
+
+.hero-text {
+    float: left;
+    width: 50%;
+}
+
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+}
