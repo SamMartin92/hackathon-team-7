@@ -5,9 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackathon-jan2023-team7</title>
+    <!-- css style -->
     <style>
+      /* google fonts link */
+      @import url("https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif+Toto:wght@500&display=swap");
+
       .income-form {
-        background-color: aqua;
+        background-color: rgb(191, 228, 152);
+        width: 80vw;
+        max-width: 800px;
+        min-height: 350px;
+        text-align: center;
+        padding: 60px 20px;
+        font-family: "Lora", serif;
+      }
+
+      h2 {
+        font-family: "Noto Serif Toto", serif;
+        font-size: 180%;
+      }
+
+      #notice {
+        color: red;
+        font-weight: bold;
+        font-size: 140%;
+        vertical-align: baseline;
+      }
+
+      #label {
+        font-weight: bold;
+        font-size: 130%;
+      }
+
+      input[type="number"] {
+        height: 25px;
+        font-size: 20px;
+        width: 150px;
+        padding-left: 5px;
+        border-radius: 5px;
+        border: 2px solid black;
+        background-color: rgb(246, 235, 221);
+        margin: 10px;
+      }
+
+      #currency {
+        height: 31px;
+        border-radius: 5px;
+        border: 2px solid black;
+        width: 150px;
+        font-size: 100%;
+        background-color: rgb(246, 235, 221);
+        cursor: pointer;
+        margin: 10px 0 20px;
+      }
+
+      #info {
+        font-size: 110%;
+      }
+
+      input[type="button"] {
+        width: 150px;
+        height: 35px;
+        border-radius: 20px;
+        font-size: 110%;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: rgb(38, 107, 12);
+        color: white;
+        border: 2px solid rgb(46, 47, 45);
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+
+      input[type="button"]:hover,
+      input[type="button"]:focus {
+        background-color: rgb(20, 20, 144);
+      }
+
+      #info-link {
+        text-decoration: none;
+        color: rgb(76, 67, 193);
+        font-weight: bold;
       }
     </style>
   </head>
@@ -15,10 +93,10 @@
     <div class="income-form">
       <h2>Please provide us with your monthly net Income.</h2>
       <form action="#" method="post">
-        <label for="userIncome">Your net Income: </label>
+        <label id="label" for="userIncome">Your net Income: </label>
         <input type="number" name="userIncome" id="userIncome" />
         <select id="currency" name="currency">
-          <option>Select currency</option>
+          <option>Select Currency</option>
           <option value="KWD">KWD-Kuwaiti Dinar</option>
           <option value="BHD">BHD-Bahraini Dinar</option>
           <option value="OMR">OMR-Omani Rial</option>
@@ -30,13 +108,15 @@
           <option value="USD">USD-US Dollar</option>
           <option value="CAD">CAD-Canadian Dollar</option>
         </select>
+        <br />
         <input type="button" value="Submit" />
       </form>
-      <p>
-        <span>*</span>Notice that net Income is your Income after all taxes and
-        deductions are taken out of your paycheck. If you need further
-        assistance on this visit
+      <p id="info">
+        <span id="notice">* </span>Notice that net Income is your Income after
+        all taxes and deductions are taken out of your paycheck. If you need
+        further assistance on this visit
         <a
+          id="info-link"
           href="https://en.wikipedia.org/wiki/Net_income"
           target="_blank"
           aria-label="open wikipedia link in a new tab"
