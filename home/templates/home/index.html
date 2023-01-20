@@ -109,7 +109,7 @@
           <option value="CAD">CAD-Canadian Dollar</option>
         </select>
         <br />
-        <input type="button" value="Submit" />
+        <input type="button" value="Submit" id="submit" />
       </form>
       <p id="info">
         <span id="notice">* </span>Notice that net Income is your Income after
@@ -124,5 +124,33 @@
         >
       </p>
     </div>
+    <div id="income-value"></div>
+    <div id="selected-currency"></div>
+    <!-- javascript code -->
+    <script>
+      // get users income value
+      let button = document.getElementById("submit");
+      let income = document.getElementById("income-value");
+      button.addEventListener("click", function () {
+        let incomeValue = document.getElementById("userIncome").value;
+        if (incomeValue === "") {
+          alert("Please provide your net Income !");
+        } else {
+          income.innerText = `User income is: ${incomeValue}`;
+        }
+      });
+
+      //code to get selected currency from user
+      (function () {
+        let currency_select = document.getElementById("currency");
+        let result = document.getElementById("selected-currency");
+
+        currency_select.addEventListener("change", function () {
+          let selected_value = this.value;
+          let selected_text = this.options[this.selectedIndex].text;
+          result.innerText = `Selected currency is: ${selected_value}`;
+        });
+      })();
+    </script>
   </body>
 </html>
