@@ -65,3 +65,24 @@ a.button is-primary {
 
 /************************************************** index page */
 
+.hero-body {
+    background-color: #ceedc7;
+    margin: 30px;
+}
+
+.hero-image {
+    float: right;
+}
+
+.hero-text {
+    float: left;
+    width: 50%;
+}
+
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+}
