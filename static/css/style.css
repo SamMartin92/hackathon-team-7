@@ -36,29 +36,77 @@ body {
 }
 
 /*fatima home page*/
-    .info-heading {
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-    }
+.info-heading {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
 
-    .info-heading h2 {
-        text-align: center;
-        font-size: 36px;
-        margin: 50px 0 10px 0;
-    }
+.info-heading h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 50px 0 10px 0;
+}
 
-    #about-info {
-        padding-top: 30px;
-        padding-right: 20px;
-        float: left;
-        margin: 0px 0px 20px 40px;
-        text-align: center;
-    }
+#about-info {
+    padding-top: 30px;
+    padding-right: 20px;
+    float: left;
+    margin: 0px 0px 20px 40px;
+    text-align: center;
+}
 
-    #about-info > p {
-        padding-bottom: 15px;
-        font-size: 130%;
-    }
+#about-info>p {
+    padding-bottom: 15px;
+    font-size: 130%;
+}
+
+#services {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-button {
+    width: 100%;
+    height: -webkit-fill-available;
+    padding: 15px 25px;
+    background-color: ivory;
+    cursor: pointer;
+    outline: none;
+    border-color: bisque;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.service-button:hover,
+.service-button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.service-button:active {
+  background-color:#ceedc7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.box {
+    width: 30%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box h3{
+    font-size:larger
+
+}
+
+#sample-images {
+    width: 100%;
+}
