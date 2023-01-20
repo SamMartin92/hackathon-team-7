@@ -68,24 +68,7 @@
                     others
                 </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
@@ -116,12 +99,13 @@
                 <strong>HelpSavvy Financial</strong> by <a href="#">GitHub link here</a>
             </p>
             <p class="copyright text-muted">Copyright &copy; HelpSavvy <span id="copyright"></span></p>
-            <script>
-                $("#copyright").text(new Date().getFullYear());
-            </script>
         </div>
     </footer>
 
+    <script>
+        $("#copyright").text(new Date().getFullYear());
+    </script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>

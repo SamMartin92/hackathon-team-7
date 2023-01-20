@@ -1,7 +1,173 @@
+/************************************************** Google fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+/************************************************** body */
+
 body {
-    background-color: red;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff6bd;
+}
+
+/************************************************** navbar */
+
+.navbar {
+    background-color: #ffd4b2;
 }
 
 #nav-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5em;
+    margin-right: 25px;
+    max-width: fit-content;
+}
+
+.navbar-item {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+}
+
+a.navbar-item:hover {
+    background-color: #bb9c84;
+    transition: all .2s ease-in;
+    color: black;
+}
+
+a.button is-primary {
+    background-color: #ceedc7;
+}
+
+.button strong {
+    color: black;
+}
+
+.button.is-light {
+    color: black;
+}
+
+/************************************************** hamburger menu */
+
+.navbar-menu.is-active {
+    background-color: #ffd4b2;
+    transition: all .2s ease-in;
+}
+
+/************************************************** footer */
+
+.footer {
+    background-color: #ffd4b2;
+    margin-top: auto;
+    padding: 3rem 1.5rem 3.5rem;
+}
+
+/************************************************** index page */
+
+.hero-body {
+    background-color: #ceedc7;
+    margin: 30px;
+}
+
+.hero-image {
+    float: right;
+}
+
+.hero-text {
+    float: left;
+    width: 50%;
+}
+
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+}
+=======
     color: aqua;
 }
+
+/* google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif+Toto:wght@500&display=swap");
+
+.income-form {
+  background-color: rgb(191, 228, 152);
+  width: 80vw;
+  max-width: 800px;
+  min-height: 350px;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Lora", serif;
+}
+
+h2 {
+  font-family: "Noto Serif Toto", serif;
+  font-size: 180%;
+}
+
+#notice {
+    color: red;
+    font-weight: bold;
+    font-size: 140%;
+    vertical-align: baseline;
+  }
+
+  #label {
+    font-weight: bold;
+    font-size: 130%;
+  }
+
+  input[type="number"] {
+    height: 25px;
+    font-size: 20px;
+    width: 150px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(246, 235, 221);
+    margin: 10px;
+  }
+
+  #currency {
+    height: 31px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 150px;
+    font-size: 100%;
+    background-color: rgb(246, 235, 221);
+    cursor: pointer;
+    margin: 10px 0 20px;
+  }
+
+  #info {
+    font-size: 110%;
+  }
+
+  input[type="button"] {
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 110%;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(38, 107, 12);
+    color: white;
+    border: 2px solid rgb(46, 47, 45);
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  input[type="button"]:hover,
+  input[type="button"]:focus {
+    background-color: rgb(20, 20, 144);
+  }
+
+  #info-link {
+    text-decoration: none;
+    color: rgb(76, 67, 193);
+    font-weight: bold;
+  }
+
