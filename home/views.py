@@ -8,3 +8,9 @@ def index(request):
 def primary(request):
     return render(request, 'home/primary.html')
 
+def secondary(request):
+    return render(request, 'home/secondary.html')
+
+def others(request):
+    return render(request, 'home/others.html')
+

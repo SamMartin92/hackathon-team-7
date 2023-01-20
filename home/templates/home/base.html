@@ -39,7 +39,7 @@
 
     <nav class="navbar" role="navigation" aria-label="main-navigation">
         <div class="navbar-brand">
-            <a href="#" class="navbar-item" id="nav-title">
+            <a href="{% url 'index' %}" class="navbar-item" id="nav-title">
                 HelpSavvy Financial
             </a>
 
@@ -52,7 +52,7 @@
 
         <div id="nav-links" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a href="{% url 'index' %}" class="navbar-item wnqidonqdwinwid">
                     Home
                 </a>
 
@@ -60,12 +60,12 @@
                     Primary
                 </a>
 
-                <a href="#" class="navbar-item">
-                    secondary
+                <a href="{% url 'secondary' %}" class="navbar-item">
+                    Secondary
                 </a>
 
-                <a href="#" class="navbar-item">
-                    others
+                <a href="{% url 'others' %}" class="navbar-item">
+                    Others
                 </a>
 
                 
