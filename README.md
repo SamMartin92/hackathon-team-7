@@ -103,4 +103,5 @@ Detail plans and scope of project here....
 << you may have already done this above in the Imagery section, but just in case, please attribute Media acquisition here >>
 ​
 ### Acknowledgements
+
 << personal thanks and praise 🙌 >>
