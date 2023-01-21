@@ -77,10 +77,15 @@ a.button is-primary {
 .hero-body {
     background-color: #ceedc7;
     margin: 30px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero-image {
     float: right;
+    width: 45%;
 }
 
 .hero-text {
@@ -107,8 +112,8 @@ a.button is-primary {
 
 .info-heading h2 {
     text-align: center;
-    font-size: 36px;
-    margin: 50px 0 10px 0;
+    font-size: 40px;
+    margin: 20px 0;
 }
 
 #about-info {
@@ -161,6 +166,7 @@ a.button is-primary {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
 .box h3{
