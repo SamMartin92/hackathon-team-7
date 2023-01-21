@@ -39,7 +39,7 @@
 
     <nav class="navbar" role="navigation" aria-label="main-navigation">
         <div class="navbar-brand">
-            <a href="#" class="navbar-item" id="nav-title">
+            <a href="{% url 'index' %}" class="navbar-item" id="nav-title">
                 HelpSavvy Financial
             </a>
 
@@ -52,52 +52,42 @@
 
         <div id="nav-links" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a href="{% url 'index' %}" class="navbar-item wnqidonqdwinwid">
                     Home
                 </a>
 
-                <a href="#" class="navbar-item">
+                <a href="{% url 'primary' %}" class="navbar-item">
                     Primary
                 </a>
 
-                <a href="#" class="navbar-item">
-                    secondary
+                <a href="{% url 'secondary' %}" class="navbar-item">
+                    Secondary
                 </a>
 
-                <a href="#" class="navbar-item">
-                    others
+                <a href="{% url 'others' %}" class="navbar-item">
+                    Others
                 </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a href="#" class="button is-primary">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'account_logout' %}" class="button is-light">
+                            Log Out
+                        </a>
+                    {% else %}
+                    
+                    <a href="{% url 'account_signup' %}" class="button is-primary">
                         <strong>Sign Up</strong>
                     </a>
-                    <a href="#" class="button is-light">
+                    <a href="{% url 'account_login' %}" class="button is-light">
                         Log in
                     </a>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -116,12 +106,14 @@
                 <strong>HelpSavvy Financial</strong> by <a href="#">GitHub link here</a>
             </p>
             <p class="copyright text-muted">Copyright &copy; HelpSavvy <span id="copyright"></span></p>
-            <script>
-                $("#copyright").text(new Date().getFullYear());
-            </script>
         </div>
     </footer>
-
+    <script src="{% static 'js/script.js' %}"></script>
+    {% block postloadjs %}
+    <script>
+        $("#copyright").text(new Date().getFullYear());
+    </script>
+    {% endblock %}
 </body>
 
 </html>
