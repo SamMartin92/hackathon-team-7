@@ -1,27 +1,109 @@
 {% extends "home/base.html" %}
 
 {% block title %}Home{% endblock %}
-
 {% block content %}
 
 <section class="hero">
     <div class="hero-body">
         <div class="hero-image">
-            <img src="/static/images/office-staff.jpg"/>
+            <img src="/static/images/office-staff.jpg" />
         </div>
         <div class="hero-text">
             <h2 class="title">
                 HelpSavvy Financial
             </h2>
+            <br>
             <p class="subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore qui veritatis repudiandae voluptate
-                aut
-                vero optio tempora ab corrupti voluptates, delectus sint sit iusto unde, nulla dolorem cum maxime
-                mollitia.
+                Free personal holiday budget planner to keep track of all your expenses and income to help you save
+                money for a
+                trip to your favourite holiday destination!
             </p>
         </div>
     </div>
 </section>
+
+
+<!-- Our Purpose Section -->
+<section class="info-heading">
+    <h2>Our Purpose</h2>
+    <div id="info-image">
+
+    </div>
+    <div id="about-info">
+        <p>Travel with an ease of mind without having to worry about your spendings too much or not having enough
+            money! We will help you manage your monthly finances.
+        </p>
+        <br>
+        <p>
+            Check the live Currency rate to find out how much money you'll need to have the best luxury holiday in a
+            destination of your choice!
+        </p>
+    </div>
+</section>
+
+<!-- Our Services Section -->
+<section class="info-heading">
+    <h2>Our Services</h2>
+    <div id="services">
+        <div class="box">
+            <button class="service-button">
+                <h3>Start Budgeting</h3>
+                <br>
+                <p>
+                    Enter your monthly income and expenses to help us calculate how much you should expect to save each
+                    month.
+                </p>
+                <p>Set a savings goal and try to reach it. Keep track of extra spending for each month!</p>
+                <br>
+                <img src="/static/images/budgeting.png" alt="Budget calculator">
+            </button>
+        </div>
+        <div class="box">
+            <button class="service-button">
+                <h3>Check Exchange Rates</h3>
+                <br>
+                <p>
+                    Check what the exchange rate is for the country you are planning to visit. This will help check if
+                    you have enough money to cover the cost of your trip.
+                </p>
+                <p>This will also help you plan on how much of a certain currency you should expect to spend on food,
+                    shopping and travelling
+                    by buses or taxi in the country</p>
+                <br>
+                <img src="/static/images/exchange-rate.png" alt="Exchange rate explainer">
+            </button>
+        </div>
+        <div class="box">
+            <button class="service-button">
+                <h3>Extra</h3>
+                <br>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ad ea nulla amet deserunt, id
+                    sed
+                    ab deleniti dolor dolorem accusantium, qui ipsam quod quia quos quisquam assumenda possimus dolorum?
+                </p>
+                <br>
+                <img src="/static/images/budgeting.png">
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Images of popular tourist attractions -->
+<section class="info-heading">
+    <h2>
+        Images of Most Popular Tourist Attractions
+    </h2>
+    <div id="photos">
+        <img src="/static/images/duabi-desert.jpeg" alt="Tourist camel riding in dubai desert">
+        <img src="/static/images/spain-beach.jpg" alt="A view of the beach in spain">
+        <img src="/static/images/dubai-tower.jpeg" alt="Burj Khalifa tallest tower in Dubai">
+        <img src="/static/images/grand-canal-italy.jpg" alt="The grand canal in Italy">
+        <img src="/static/images/la-sagrada-famillia.jpeg" alt="La sagrada fiamillia">
+        <img src="/static/images/rome-italy.jpg" alt="Statues in Rome Italy">
+    </div>
+</section>
+
 
 {% endblock %}
 
