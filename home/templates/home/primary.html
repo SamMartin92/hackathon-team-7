@@ -9,7 +9,7 @@
     <label id="label" for="userIncome">Your net income: </label>
     <input type="number" name="userIncome" id="userIncome" />
     <select id="currency" name="currency">
-      <option>Select Currency</option>
+      <option disabled selected hidden>Select Currency</option>
       <option value="KWD">KWD-Kuwaiti Dinar</option>
       <option value="BHD">BHD-Bahraini Dinar</option>
       <option value="OMR">OMR-Omani Rial</option>
@@ -36,9 +36,11 @@
       >Net Income explained.</a
     >
   </p>
+  <br>
+  <div id="selected-currency"></div>
+  <div id="income-value"></div>
 </div>
-<div id="income-value"></div>
-<div id="selected-currency"></div>
+
 
 {% endblock %}
 
@@ -65,7 +67,7 @@
     currency_select.addEventListener("change", function () {
       let selected_value = this.value;
       let selected_text = this.options[this.selectedIndex].text;
-      result.innerText = `Selected currency is: ${selected_value}`;
+      result.innerText = `Selected currency is:${selected_value}`;
     });
   })();
 </script>

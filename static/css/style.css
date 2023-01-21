@@ -235,25 +235,6 @@ input[type="number"] {
   font-size: 110%;
 }
 
-/* input[type="button"] {
-    width: 150px;
-    height: 35px;
-    border-radius: 20px;
-    font-size: 110%;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: rgb(38, 107, 12);
-    color: white;
-    border: 2px solid rgb(46, 47, 45);
-    letter-spacing: 1px;
-    cursor: pointer;
-  } */
-
-/* input[type="button"]:hover,
-  input[type="button"]:focus {
-    background-color: rgb(20, 20, 144);
-  } */
-
 .income-sub-but {
   background-color: #ffd4b2;
 }
