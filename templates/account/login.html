@@ -1,9 +1,9 @@
-{% extends "base.html" %}
+{% extends "home/base.html" %}
 
 {% load i18n %}
-{% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block title %}Log In{% endblock %}
 
 {% block content %}
 
@@ -13,7 +13,7 @@
 
       <h1>{% trans "Sign In" %}</h1>
 
-      {% get_providers as socialaccount_providers %}
+
 
       <p>{% blocktrans %}Welcome back to the code|star blog. To leave a comment or like a post, please log in. If you
         have
