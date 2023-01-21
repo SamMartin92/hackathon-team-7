@@ -107,6 +107,13 @@ body {
 
 }
 
-#sample-images {
+#photos {
+    clear: both;
+    column-count: 3;
+    column-gap: 0;
+}
+
+#photos > img {
     width: 100%;
+    height: 500px;
 }

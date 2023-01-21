@@ -10,6 +10,7 @@
             <h2 class="title">
                 HelpSavvy Financial
             </h2>
+            <br>
             <p class="subtitle">
                 Free personal holiday budget planner to keep track of all your expenses and income to help you save
                 money for a
@@ -51,7 +52,7 @@
                 </p>
                 <p>Set a savings goal and try to reach it. Keep track of extra spending for each month!</p>
                 <br>
-                <img src="/static/images/budgeting.png">
+                <img src="/static/images/budgeting.png" alt="Budget calculator">
             </button>
         </div>
         <div class="box">
@@ -62,10 +63,11 @@
                     Check what the exchange rate is for the country you are planning to visit. This will help check if
                     you have enough money to cover the cost of your trip.
                 </p>
-                <p>This will also help you plan on how much of a certain currency you should expect to spend on food, shopping and travelling
+                <p>This will also help you plan on how much of a certain currency you should expect to spend on food,
+                    shopping and travelling
                     by buses or taxi in the country</p>
                 <br>
-                <img src="/static/images/exchange-rate.png">
+                <img src="/static/images/exchange-rate.png" alt="Exchange rate explainer">
             </button>
         </div>
         <div class="box">
@@ -85,14 +87,19 @@
 </section>
 
 <!-- Images of popular tourist attractions -->
-<section id="sample-images">
+<section class="info-heading">
     <h2>
         Images of Most Popular Tourist Attractions
     </h2>
+    <div id="photos">
+        <img src="/static/images/duabi-desert.jpeg" alt="Tourist camel riding in dubai desert">
+        <img src="/static/images/spain-beach.jpg" alt="A view of the beach in spain">
+        <img src="/static/images/dubai-tower.jpeg" alt="Burj Khalifa tallest tower in Dubai">
+        <img src="/static/images/grand-canal-italy.jpg" alt="The grand canal in Italy">
+        <img src="/static/images/la-sagrada-famillia.jpeg" alt="La sagrada fiamillia">
+        <img src="/static/images/rome-italy.jpg" alt="Statues in Rome Italy">
+    </div>
 </section>
-<!-- scroll to the top of the page -->
-<a href="#" class="go-to-top" aria-label="Scroll back to the top of the page"><i class="fa-solid fa-arrow-up"></i></a>
-
 
 
 {% endblock %}
