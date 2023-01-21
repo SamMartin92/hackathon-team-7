@@ -7,30 +7,28 @@
 
 {% block content %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+<div class="container form">
+  <div class="">
+    <div class="">
 
       <h1>{% trans "Sign In" %}</h1>
-
-
-
-      <p>{% blocktrans %}Welcome back to the code|star blog. To leave a comment or like a post, please log in. If you
-        have
-        not created an account yet, then
-        <a href="{{ signup_url }}">sign up</a>.{% endblocktrans %}</p>
+      <br>
+      <p>{% blocktrans %}Welcome back to <em>HelpSavvy Financial</em>. To make managing your finances easier please login below.</p>
+      <p>If you have not created an account yet, then <a href="{{ signup_url }}">sign up</a>.</p>
+        {% endblocktrans %}
     </div>
+    <br>
   </div>
 
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+  <div class="">
+    <div class="">
       <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+        <button class="button log-but" type="submit" value="Submit input">{% trans "Sign In" %}</button>
       </form>
     </div>
   </div>

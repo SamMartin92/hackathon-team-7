@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif+Toto:wght@500&display=swap");
 
 /************************************************** body */
 
@@ -86,12 +87,8 @@ a.button is-primary {
 .subtitle {
     font-family: 'Inter', sans-serif;
 }
-=======
-    color: aqua;
-}
 
-/* google fonts link */
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif+Toto:wght@500&display=swap");
+/************************************************** income form */
 
 .income-form {
   background-color: rgb(191, 228, 152);
@@ -171,3 +168,53 @@ h2 {
     font-weight: bold;
   }
 
+/************************************************** sign up / login forms */
+
+.form {
+  width: fit-content;
+  background-color: #ceedc7;
+  text-align: center;
+  padding: 5%;
+  margin-top: 7%;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  border-radius: 10px;
+}
+
+.sub-but {
+  background-color: #ffd4b2;
+}
+
+.signup > p {
+  line-height: 35pt;
+}
+
+.signup > p > label {
+  display: none;
+}
+
+.signup > p > input {
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.log-but {
+  background-color: #ffd4b2;
+}
+
+.login > p {
+  line-height: 35pt;
+}
+
+.login > p > label {
+  display: none;
+}
+
+.login > p > input {
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
