@@ -7,92 +7,92 @@
 /************************************************** body */
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff6bd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6bd;
 }
 
 /************************************************** navbar */
 
 .navbar {
-    background-color: #ffd4b2;
+  background-color: #ffd4b2;
 }
 
 #nav-title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.5em;
-    margin-right: 25px;
-    max-width: fit-content;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5em;
+  margin-right: 25px;
+  max-width: fit-content;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff6bd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6bd;
 }
 
 .navbar-item {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2em;
 }
 
 a.navbar-item:hover {
-    background-color: #bb9c84;
-    transition: all .2s ease-in;
-    color: black;
+  background-color: #bb9c84;
+  transition: all .2s ease-in;
+  color: black;
 }
 
 a.button is-primary {
-    background-color: #ceedc7;
+  background-color: #ceedc7;
 }
 
 .button strong {
-    color: black;
+  color: black;
 }
 
 .button.is-light {
-    color: black;
+  color: black;
 }
 
 /************************************************** hamburger menu */
 
 .navbar-menu.is-active {
-    background-color: #ffd4b2;
-    transition: all .2s ease-in;
+  background-color: #ffd4b2;
+  transition: all .2s ease-in;
 }
 
 /************************************************** footer */
 
 .footer {
-    background-color: #ffd4b2;
-    margin-top: auto;
-    padding: 3rem 1.5rem 3.5rem;
+  background-color: #ffd4b2;
+  margin-top: auto;
+  padding: 3rem 1.5rem 3.5rem;
 }
 
 /************************************************** index page */
 
 .hero-body {
-    background-color: #ceedc7;
-    margin: 30px;
+  background-color: #ceedc7;
+  margin: 30px;
 }
 
 .hero-image {
-    float: right;
+  float: right;
 }
 
 .hero-text {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .title {
-    font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .subtitle {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /*home page*/
@@ -143,14 +143,14 @@ a.button is-primary {
 
 .service-button:hover,
 .service-button:focus {
-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
 }
 
 .service-button:active {
-background-color:#ceedc7;
-box-shadow: 0 5px #666;
-transform: translateY(4px);
+  background-color: #ceedc7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .box {
@@ -162,9 +162,8 @@ transform: translateY(4px);
   align-items: center;
 }
 
-.box h3{
-  font-size:larger
-
+.box h3 {
+  font-size: larger
 }
 
 #photos {
@@ -173,7 +172,7 @@ transform: translateY(4px);
   column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
   width: 100%;
   height: 500px;
 }
@@ -181,13 +180,16 @@ transform: translateY(4px);
 /************************************************** income form */
 
 .income-form {
-  background-color: rgb(191, 228, 152);
+  background-color: #ceedc7;
   width: 80vw;
   max-width: 800px;
   min-height: 350px;
   text-align: center;
   padding: 60px 20px;
-  font-family: "Lora", serif;
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 10px;
 }
 
 h2 {
@@ -196,44 +198,44 @@ h2 {
 }
 
 #notice {
-    color: red;
-    font-weight: bold;
-    font-size: 140%;
-    vertical-align: baseline;
-  }
+  color: red;
+  font-weight: bold;
+  font-size: 140%;
+  vertical-align: baseline;
+}
 
-  #label {
-    font-weight: bold;
-    font-size: 130%;
-  }
+#label {
+  font-weight: bold;
+  font-size: 130%;
+}
 
-  input[type="number"] {
-    height: 25px;
-    font-size: 20px;
-    width: 150px;
-    padding-left: 5px;
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: rgb(246, 235, 221);
-    margin: 10px;
-  }
+input[type="number"] {
+  height: 25px;
+  font-size: 20px;
+  width: 150px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: rgb(246, 235, 221);
+  margin: 10px;
+}
 
-  #currency {
-    height: 31px;
-    border-radius: 5px;
-    border: 2px solid black;
-    width: 150px;
-    font-size: 100%;
-    background-color: rgb(246, 235, 221);
-    cursor: pointer;
-    margin: 10px 0 20px;
-  }
+#currency {
+  height: 31px;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 150px;
+  font-size: 100%;
+  background-color: rgb(246, 235, 221);
+  cursor: pointer;
+  margin: 10px 0 20px;
+}
 
-  #info {
-    font-size: 110%;
-  }
+#info {
+  font-size: 110%;
+}
 
-  input[type="button"] {
+/* input[type="button"] {
     width: 150px;
     height: 35px;
     border-radius: 20px;
@@ -245,18 +247,22 @@ h2 {
     border: 2px solid rgb(46, 47, 45);
     letter-spacing: 1px;
     cursor: pointer;
-  }
+  } */
 
-  input[type="button"]:hover,
+/* input[type="button"]:hover,
   input[type="button"]:focus {
     background-color: rgb(20, 20, 144);
-  }
+  } */
 
-  #info-link {
-    text-decoration: none;
-    color: rgb(76, 67, 193);
-    font-weight: bold;
-  }
+.income-sub-but {
+  background-color: #ffd4b2;
+}
+
+#info-link {
+  text-decoration: none;
+  color: rgb(76, 67, 193);
+  font-weight: bold;
+}
 
 /************************************************** sign up / login forms */
 
@@ -275,15 +281,15 @@ h2 {
   background-color: #ffd4b2;
 }
 
-.signup > p {
+.signup>p {
   line-height: 35pt;
 }
 
-.signup > p > label {
+.signup>p>label {
   display: none;
 }
 
-.signup > p > input {
+.signup>p>input {
   width: 50%;
   height: 40px;
   border-radius: 5px;
@@ -295,15 +301,15 @@ h2 {
   margin-top: 5px;
 }
 
-.login > p {
+.login>p {
   line-height: 35pt;
 }
 
-.login > p > label {
+.login>p>label {
   display: none;
 }
 
-.login > p > input {
+.login>p>input {
   width: 50%;
   height: 40px;
   border-radius: 5px;
