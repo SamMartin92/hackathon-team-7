@@ -6,18 +6,17 @@
 <section class="hero">
     <div class="hero-body">
         <div class="hero-image">
-            <img src="/static/images/office-staff.jpg" />
-        </div>
-        <div class="hero-text">
-            <h2 class="title">
-                HelpSavvy Financial
-            </h2>
-            <br>
-            <p class="subtitle">
-                Free personal holiday budget planner to keep track of all your expenses and income to help you save
-                money for a
-                trip to your favourite holiday destination!
-            </p>
+            <div class="hero-text">
+                <h2 class="title">
+                    HelpSavvy Financial
+                </h2>
+                <br>
+                <p class="subtitle">
+                    Free personal holiday budget planner to keep track of all your expenses and income to help you save
+                    money for a
+                    trip to your favourite holiday destination!
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -44,47 +43,53 @@
 <!-- Our Services Section -->
 <section class="info-heading">
     <h2>Our Services</h2>
-    <div id="services">
-        <div class="box">
-            <button class="service-button">
-                <h3>Start Budgeting</h3>
-                <br>
-                <p>
-                    Enter your monthly income and expenses to help us calculate how much you should expect to save each
-                    month.
-                </p>
-                <p>Set a savings goal and try to reach it. Keep track of extra spending for each month!</p>
-                <br>
-                <img src="/static/images/budgeting.png" alt="Budget calculator">
-            </button>
+    <div id="services" class="columns is-vcentered">
+        <div class="column is-one-third">
+            <div class="box">
+                <button class="service-button">
+                    <h3>Start Budgeting</h3>
+                    <br>
+                    <p>
+                        Enter your monthly income and expenses to help us calculate how much you should expect to save
+                        each
+                        month.
+                    </p>
+                    <p>Set a savings goal and try to reach it. Keep track of extra spending for each month!</p>
+                    <br>
+                    <img src="/static/images/budgeting.png" alt="Budget calculator">
+                </button>
+            </div>
         </div>
-        <div class="box">
-            <button class="service-button">
-                <h3>Check Exchange Rates</h3>
-                <br>
-                <p>
-                    Check what the exchange rate is for the country you are planning to visit. This will help check if
-                    you have enough money to cover the cost of your trip.
-                </p>
-                <p>This will also help you plan on how much of a certain currency you should expect to spend on food,
-                    shopping and travelling
-                    by buses or taxi in the country</p>
-                <br>
-                <img src="/static/images/exchange-rate.png" alt="Exchange rate explainer">
-            </button>
+        <div class="column is-one-third">
+            <div class="box">
+                <button class="service-button">
+                    <h3>Check Exchange Rates</h3>
+                    <br>
+                    <p>
+                        Check what the exchange rate is for the country you are planning to visit. This will help you
+                        check
+                        if
+                        you have enough money to cover the cost of your trip.
+                    </p>
+                    <br>
+                    <img src="/static/images/exchange-rate.png" alt="Exchange rate explainer">
+                </button>
+            </div>
         </div>
-        <div class="box">
-            <button class="service-button">
-                <h3>Extra</h3>
-                <br>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ad ea nulla amet deserunt, id
-                    sed
-                    ab deleniti dolor dolorem accusantium, qui ipsam quod quia quos quisquam assumenda possimus dolorum?
-                </p>
-                <br>
-                <img src="/static/images/budgeting.png">
-            </button>
+        <div class="column is-one-third">
+            <div class="box">
+                <button class="service-button">
+                    <h3>FAQ</h3>
+                    <br>
+                    <p>
+                        We've got the answer to your questions! Check out our FAQ page to learn more. If you don't find
+                        what
+                        you're looking for, feel free to contact us!
+                    </p>
+                    <br>
+                    <img src="/static/images/faq.jpg" alt="Frequently asked question">
+                </button>
+            </div>
         </div>
     </div>
 </section>
@@ -94,16 +99,25 @@
     <h2>
         Images of Most Popular Tourist Attractions
     </h2>
-    <div id="photos">
-        <img src="/static/images/duabi-desert.jpeg" alt="Tourist camel riding in dubai desert">
-        <img src="/static/images/spain-beach.jpg" alt="A view of the beach in spain">
-        <img src="/static/images/dubai-tower.jpeg" alt="Burj Khalifa tallest tower in Dubai">
-        <img src="/static/images/grand-canal-italy.jpg" alt="The grand canal in Italy">
-        <img src="/static/images/la-sagrada-famillia.jpeg" alt="La sagrada fiamillia">
-        <img src="/static/images/rome-italy.jpg" alt="Statues in Rome Italy">
+    <div class="columns is-gapless">
+        <div class="column">
+            <img src="/static/images/duabi-desert.jpeg" alt="Tourist camel riding in dubai desert">
+        </div>
+        <div class="column ">
+            <img src="/static/images/spain-beach.jpg" alt="A view of the beach in spain">
+            <img src="/static/images/grand-canal-italy.jpg" alt="The grand canal in Italy">
+        </div>
+        <div class="column">
+            <img src="/static/images/dubai-tower.jpeg" alt="Burj Khalifa tallest tower in Dubai">
+        </div>
+        <div class="column">
+            <img src="/static/images/rome-italy.jpg" alt="Statues in Rome Italy">
+        </div>
+        <div class="column">
+            <img src="/static/images/la-sagrada-famillia.jpeg" alt="La sagrada fiamillia">
+        </div>
     </div>
 </section>
 
 
 {% endblock %}
-
