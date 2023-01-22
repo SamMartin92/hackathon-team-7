@@ -1,5 +1,5 @@
-const form = document.getElementById('currency-form');
-form.addEventListener('submit', exchangeCurrency);
+const currencyForm = document.getElementById('currency-form');
+currencyForm.addEventListener('submit', exchangeCurrency);
 
 async function exchangeCurrency(event){
     event.preventDefault();
@@ -74,7 +74,6 @@ function drawChart(dataPoints, currencyOne, currencyTwo) {
       title: `Exchange rate for ${currencyOne} to ${currencyTwo}`,
       legend: { position: 'bottom' }
     };
-
     let chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
     chart.draw(data, options);
