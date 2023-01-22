@@ -143,8 +143,6 @@ a.button is-primary {
 
 #services {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .service-button {
@@ -172,13 +170,12 @@ a.button is-primary {
 }
 
 .box {
-  width: 30%;
-  background-color: antiquewhite;
+  background-color: #ffd4b2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem;
 }
 
 .box h3 {
