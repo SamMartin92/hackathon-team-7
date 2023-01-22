@@ -3,14 +3,16 @@
 {% block title %}Home{% endblock %}
 {% block content %}
     
-    <div id="curve_chart" style="display: flex; height: 40%; width: auto;"></div>
+    <div id="curve_chart" style="display: flex; height: 40%; max-width: 80%;"></div>
+    <div class="curr-div">
     <form id="currency-form" method="POST">
 
       <p>Exchange From: <input type="text" id="currencyOne"name="currencyOne" required></p>
       <p>Exchange To: <input type="text" id="currencyTwo" name="currencyTwo" required></p>
       <p>Exchange Amount: <input type="number" id="exchangeAmount" name="exchangeAmount"></p>
-      <input id="class" type="submit">
+      <input id="class" type="submit" class="button income-sub-but">
     </form>
+  </div>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">google.load('visualization', '1.0', {'packages':['corechart']});</script>
     {% endblock %}

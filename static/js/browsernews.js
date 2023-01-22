@@ -46,11 +46,11 @@ async function getNews(url) {
         newsTable.removeChild(newsTable.firstChild);
     }
     for (let i = 0; i < data.total_hits - 1; i++){
-        newsTable.innerHTML += `<h2>${data.articles[i].title}</h2>
-                                <p>By: ${data.articles[i].author}, ${data.articles[i].published_date}</p>
-                                <p>${data.articles[i].excerpt}</p>
-                                <p>${data.articles[i].summary}</p>
-                                <p>Rights: ${data.articles[i].rights}</p>
-                                <h3><a href="${data.articles[i].link}" target="_blank">FULL ARTICLE HERE</a></h3>`;
+        newsTable.innerHTML += `<div class="news-div"><h2 class="news-table-header">${data.articles[i].title}</h2>
+                                <p class="news-table-para">By: ${data.articles[i].author}, ${data.articles[i].published_date}</p>
+                                <p class="news-table-para">${data.articles[i].excerpt}</p>
+                                <p class="news-table-para">${data.articles[i].summary}</p>
+                                <p class="news-table-para">Rights: ${data.articles[i].rights}</p>
+                                <h3 class="news-table-link"><a href="${data.articles[i].link}" target="_blank">FULL ARTICLE HERE</a></h3></div>`;
     }
 }
