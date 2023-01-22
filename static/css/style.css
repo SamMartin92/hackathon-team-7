@@ -155,6 +155,11 @@ a.button is-primary {
   border-color: bisque;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  font-family: 'Inter', sans-serif;
+}
+
+.service-button > h3 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .info-img {
