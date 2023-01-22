@@ -57,15 +57,23 @@
                 </a>
 
                 <a href="{% url 'primary' %}" class="navbar-item">
-                    Primary
+                    Budget
                 </a>
 
                 <a href="{% url 'secondary' %}" class="navbar-item">
-                    Secondary
+                    Exchange Rates
                 </a>
 
                 <a href="{% url 'others' %}" class="navbar-item">
-                    Others
+                    FAQ
+                </a>
+
+                <a href="{% url 'news' %}" class="navbar-item">
+                    News
+                </a>
+
+                <a href="{% url 'finance' %}" class="navbar-item">
+                    Finance Data
                 </a>
 
                 
@@ -109,6 +117,8 @@
         </div>
     </footer>
     <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/browsernews.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/financedata.js' %}"></script>
     {% block postloadjs %}
     <script>
         $("#copyright").text(new Date().getFullYear());
