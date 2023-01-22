@@ -4,29 +4,32 @@ form.addEventListener('submit', getParameters);
 //sets url according to selected parameters in the news-form
 function getParameters(event) {
     event.preventDefault();
-    let countryArr = [];
-    let langArr = [];
+    // let countryArr = [];
+    // let langArr = [];
     let category = document.getElementById("news-category").value;
-    let country = document.getElementById('news-country').selectedOptions;
-    let language = document.getElementById("news-language").selectedOptions;
-
-    for (let i = 0; i < language.length; i++) {
-        langArr.push(language[i].value);
-    }
-    if (country.length > 0) {
-        for (let i = 0; i < country.length; i++){
-            countryArr.push(country[i].value);
-        }
-        let url = `https://api.newscatcherapi.com/v2/latest_headlines?lang=${langArr.toString()}&countries=${countryArr.toString()}&topic=${category}&when=1h`;
+    let country = document.getElementById('news-country').value;
+    let language = document.getElementById("news-language").value;
+    // langArr.push(language);
+    // countryArr.push(country);
+    // console.log(langArr, countryArr, category);
+    // console.log(langArr.toString());
+    // for (let i = 0; i < language.length; i++) {
+    //     langArr.push(language[i].value);
+    // }
+    // if (country.length > 0) {
+    //     for (let i = 0; i < country.length; i++){
+    //         countryArr.push(country[i].value);
+    //     }
+        let url = `https://api.newscatcherapi.com/v2/latest_headlines?lang=${language}&countries=${country}&topic=${category}&when=1h`;
         getNews(url);
-    } else {
-        for (let i = 0; i < language.length; i++){
-        console.log(category);
-        console.log(langArr.toString());
-        }
-        let url = `https://api.newscatcherapi.com/v2/latest_headlines?lang=${langArr.toString()}&topic=${category}&when=1h`;
-        getNews(url);
-    }
+    // } else {
+    //     for (let i = 0; i < language.length; i++){
+    //     console.log(category);
+    //     console.log(langArr.toString());
+    //     }
+    //     let url = `https://api.newscatcherapi.com/v2/latest_headlines?lang=${langArr.toString()}&topic=${category}&when=1h`;
+    //     getNews(url);
+    // }
     
 }
 
