@@ -11,7 +11,7 @@
                 <h2 class="title">
                     HelpSavvy Financial
                 </h2>
-                
+
                 <p class="subtitle">
                     Free personal holiday budget planner to keep track of all your expenses and income to help you save
                     money for a
@@ -47,49 +47,58 @@
     <div id="services" class="columns is-vcentered">
         <div class="column is-one-third">
             <div class="box">
-                <button class="service-button">
-                    <h3>Start Budgeting</h3>
-                    <br>
-                    <p>
-                        Enter your monthly income and expenses to help us calculate how much you should expect to save
-                        each
-                        month.
-                    </p>
-                    <p>Set a savings goal and try to reach it. Keep track of extra spending for each month!</p>
-                    <br>
-                    <img src="/static/images/budgeting.png" alt="Budget calculator" class="info-img">
-                </button>
+                <a href="{% url 'primary' %}">
+                    <button class="service-button">
+                        <h3>Start Budgeting</h3>
+                        <br>
+                        <p>
+                            Enter your monthly income and expenses to help us calculate how much you should expect to
+                            save
+                            each
+                            month.
+                        </p>
+                        <p>Set a savings goal and try to reach it. Keep track of extra spending for each month!</p>
+                        <br>
+                        <img src="/static/images/budgeting.png" alt="Budget calculator" class="info-img">
+                    </button>
+                </a>
             </div>
         </div>
         <div class="column is-one-third">
             <div class="box">
-                <button class="service-button">
-                    <h3>Check Exchange Rates</h3>
-                    <br>
-                    <p>
-                        Check what the exchange rate is for the country you are planning to visit. This will help you
-                        check
-                        if
-                        you have enough money to cover the cost of your trip.
-                    </p>
-                    <br>
-                    <img src="/static/images/exchange-rate.png" alt="Exchange rate explainer" class="info-img">
-                </button>
+                <a href="{% url 'primary' %}">
+                    <button class="service-button">
+                        <h3>Check Exchange Rates</h3>
+                        <br>
+                        <p>
+                            Check what the exchange rate is for the country you are planning to visit. This will help
+                            you
+                            check
+                            if
+                            you have enough money to cover the cost of your trip.
+                        </p>
+                        <br>
+                        <img src="/static/images/exchange-rate.png" alt="Exchange rate explainer" class="info-img">
+                    </button>
+                </a>
             </div>
         </div>
         <div class="column is-one-third">
             <div class="box">
-                <button class="service-button">
-                    <h3>FAQ</h3>
-                    <br>
-                    <p>
-                        We've got the answer to your questions! Check out our FAQ page to learn more. If you don't find
-                        what
-                        you're looking for, feel free to contact us!
-                    </p>
-                    <br>
-                    <img src="/static/images/faq.jpg" alt="Frequently asked question" class="info-img">
-                </button>
+                <a href="{% url 'primary' %}">
+                    <button class="service-button">
+                        <h3>FAQ</h3>
+                        <br>
+                        <p>
+                            We've got the answer to your questions! Check out our FAQ page to learn more. If you don't
+                            find
+                            what
+                            you're looking for, feel free to contact us!
+                        </p>
+                        <br>
+                        <img src="/static/images/faq.jpg" alt="Frequently asked question" class="info-img">
+                    </button>
+                </a>
             </div>
         </div>
     </div>

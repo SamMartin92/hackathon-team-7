@@ -197,8 +197,7 @@ a.button is-primary {
   text-align: center;
   padding: 60px 20px;
   font-family: 'Inter', sans-serif;
-  margin: auto;
-  margin-top: 10%;
+  margin: 10% auto;
   border-radius: 10px;
 }
 
