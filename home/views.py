@@ -14,3 +14,9 @@ def secondary(request):
 def others(request):
     return render(request, 'home/others.html')
 
+def news(request):
+    return render(request, 'home/news.html')
+
+def financedata(request):
+    return render(request, 'home/financedata.html')
+
