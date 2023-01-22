@@ -1,14 +1,12 @@
 {% extends "home/base.html" %}
 
 {% block content %}
-{{ income.income }}
+
 
 <button class="js-modal-trigger" data-target="modal-js-example">
     Add Outlay
   </button>
-{% for outlay in outlays %}
-{{outlay.title}} {{outlay.amount}} {{outlay.category}}
-{% endfor %}
+
 
   <div id="modal-js-example" class="modal">
     <div class="modal-background"></div>
