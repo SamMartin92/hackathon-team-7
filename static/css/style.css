@@ -7,144 +7,156 @@
 /************************************************** body */
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff6bd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6bd;
 }
 
 /************************************************** navbar */
 
 .navbar {
-    background-color: #ffd4b2;
+  background-color: #ffd4b2;
 }
 
 #nav-title {
-    color: aqua;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.5em;
-    margin-right: 25px;
-    max-width: fit-content;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5em;
+  margin-right: 25px;
+  max-width: fit-content;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff6bd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6bd;
 }
 
 .navbar-item {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2em;
 }
 
 a.navbar-item:hover {
-    background-color: #bb9c84;
-    transition: all .2s ease-in;
-    color: black;
+  background-color: #bb9c84;
+  transition: all .2s ease-in;
+  color: black;
 }
 
 a.button is-primary {
-    background-color: #ceedc7;
+  background-color: #ceedc7;
 }
 
 .button strong {
-    color: black;
+  color: black;
 }
 
 .button.is-light {
-    color: black;
+  color: black;
 }
 
 /************************************************** hamburger menu */
 
 .navbar-menu.is-active {
-    background-color: #ffd4b2;
-    transition: all .2s ease-in;
+  background-color: #ffd4b2;
+  transition: all .2s ease-in;
 }
 
 /************************************************** footer */
 
 .footer {
-    background-color: #ffd4b2;
-    margin-top: auto;
-    padding: 3rem 1.5rem 3.5rem;
+  background-color: #ffd4b2;
+  margin-top: auto;
+  padding: 3rem 1.5rem 3.5rem;
 }
 
 /************************************************** index page */
-
-.hero-body {
-    background-color: #ceedc7;
-    margin: 30px;
-    display: inline-flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
+.hero {
+  display: flex;
+  justify-content: space-around;
 }
 
-.hero-image {
-    float: right;
-    width: 45%;
+.hero-body {
+  background-color: #ceedc7;
+  margin: 30px;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
 }
 
 .hero-text {
-    float: left;
-    width: 50%;
+  float: left;
+  background-color: #86c8bca3;
+  margin: 20px;
+  min-width: fit-content;
+  height: fit-content;
+
+  padding: 20px 10px 20px 10px;
+  border-radius: 5px;
 }
 
 .title {
-    font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .subtitle {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /*home page*/
+.hero-image {
+  background: url('globe.jpg');
+  background-color: #ffd4b2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
 .info-heading {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .info-heading h2 {
-    text-align: center;
-    font-size: 40px;
-    margin: 20px 0;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
 }
 
 #about-info {
-    padding-top: 30px;
-    padding-right: 20px;
-    float: left;
-    margin: 0px 0px 20px 40px;
-    text-align: center;
+  padding-top: 30px;
+  padding-right: 20px;
+  float: left;
+  margin: 0px 0px 20px 40px;
+  text-align: center;
 }
 
 #about-info>p {
-    padding-bottom: 15px;
-    font-size: 130%;
+  padding-bottom: 15px;
+  font-size: 130%;
 }
 
 #services {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .service-button {
-    width: 100%;
-    height: -webkit-fill-available;
-    padding: 15px 25px;
-    background-color: ivory;
-    cursor: pointer;
-    outline: none;
-    border-color: bisque;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+  width: 100%;
+  height: -webkit-fill-available;
+  padding: 15px 25px;
+  background-color: ivory;
+  cursor: pointer;
+  outline: none;
+  border-color: bisque;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
 .service-button:hover,
@@ -154,33 +166,23 @@ a.button is-primary {
 }
 
 .service-button:active {
-  background-color:#ceedc7;
+  background-color: #ceedc7;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 .box {
-    width: 30%;
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
+  width: 30%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
-.box h3{
-    font-size:larger
-
-}
-
-.photo-container{
-  height:250px;
-}
-
-.photos > img{
-  height: fit-content;
-  object-fit: cover;
+.box h3 {
+  font-size: larger
 }
 
 /************************************************** income form */
@@ -201,67 +203,67 @@ h2 {
 }
 
 #notice {
-    color: red;
-    font-weight: bold;
-    font-size: 140%;
-    vertical-align: baseline;
-  }
+  color: red;
+  font-weight: bold;
+  font-size: 140%;
+  vertical-align: baseline;
+}
 
-  #label {
-    font-weight: bold;
-    font-size: 130%;
-  }
+#label {
+  font-weight: bold;
+  font-size: 130%;
+}
 
-  input[type="number"] {
-    height: 25px;
-    font-size: 20px;
-    width: 150px;
-    padding-left: 5px;
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: rgb(246, 235, 221);
-    margin: 10px;
-  }
+input[type="number"] {
+  height: 25px;
+  font-size: 20px;
+  width: 150px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: rgb(246, 235, 221);
+  margin: 10px;
+}
 
-  #currency {
-    height: 31px;
-    border-radius: 5px;
-    border: 2px solid black;
-    width: 150px;
-    font-size: 100%;
-    background-color: rgb(246, 235, 221);
-    cursor: pointer;
-    margin: 10px 0 20px;
-  }
+#currency {
+  height: 31px;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 150px;
+  font-size: 100%;
+  background-color: rgb(246, 235, 221);
+  cursor: pointer;
+  margin: 10px 0 20px;
+}
 
-  #info {
-    font-size: 110%;
-  }
+#info {
+  font-size: 110%;
+}
 
-  input[type="button"] {
-    width: 150px;
-    height: 35px;
-    border-radius: 20px;
-    font-size: 110%;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: rgb(38, 107, 12);
-    color: white;
-    border: 2px solid rgb(46, 47, 45);
-    letter-spacing: 1px;
-    cursor: pointer;
-  }
+input[type="button"] {
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 110%;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgb(38, 107, 12);
+  color: white;
+  border: 2px solid rgb(46, 47, 45);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
 
-  input[type="button"]:hover,
-  input[type="button"]:focus {
-    background-color: rgb(20, 20, 144);
-  }
+input[type="button"]:hover,
+input[type="button"]:focus {
+  background-color: rgb(20, 20, 144);
+}
 
-  #info-link {
-    text-decoration: none;
-    color: rgb(76, 67, 193);
-    font-weight: bold;
-  }
+#info-link {
+  text-decoration: none;
+  color: rgb(76, 67, 193);
+  font-weight: bold;
+}
 
 /************************************************** sign up / login forms */
 
@@ -280,15 +282,15 @@ h2 {
   background-color: #ffd4b2;
 }
 
-.signup > p {
+.signup>p {
   line-height: 35pt;
 }
 
-.signup > p > label {
+.signup>p>label {
   display: none;
 }
 
-.signup > p > input {
+.signup>p>input {
   width: 50%;
   height: 40px;
   border-radius: 5px;
@@ -299,15 +301,15 @@ h2 {
   background-color: #ffd4b2;
 }
 
-.login > p {
+.login>p {
   line-height: 35pt;
 }
 
-.login > p > label {
+.login>p>label {
   display: none;
 }
 
-.login > p > input {
+.login>p>input {
   width: 50%;
   height: 40px;
   border-radius: 5px;
