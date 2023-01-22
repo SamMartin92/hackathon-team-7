@@ -98,13 +98,13 @@ a.button is-primary {
 
 .title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 3.5vw;
+  font-size: 3vw;
   line-height: 44pt;
 }
 
 .subtitle {
   font-family: 'Inter', sans-serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 /*home page*/
@@ -148,13 +148,18 @@ a.button is-primary {
 .service-button {
   width: 100%;
   height: -webkit-fill-available;
-  padding: 15px 25px;
+  padding: 5px 15px;
   background-color: ivory;
   cursor: pointer;
   outline: none;
   border-color: bisque;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+}
+
+.info-img {
+  aspect-ratio: 2/1;
+  object-fit: contain;
 }
 
 .service-button:hover,
