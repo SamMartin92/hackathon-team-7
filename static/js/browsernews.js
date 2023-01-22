@@ -35,7 +35,7 @@ async function getNews(url) {
     const options = {
         method: 'GET',
         headers: {
-            'x-api-key': 'LAp8tpc2Zc4Bm7nTcRQev8I8MXPkuPIMG79_L8uLVSc'
+            'x-api-key': '8Y8TJKHXXOAeqR7tUf7mLx-IwjTz1J9-aYZrjrbAjIA'
         }
         };
     const response = await fetch(url, options);
