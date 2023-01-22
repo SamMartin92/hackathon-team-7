@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="news-form" method="POST">
+
+        <label for="news-category">Choose a News Category:</label>
+        <select name="news-category" id="news-category" required>
+        <option id="business" value="business">Business</option>
+        <option id="economics" value="economics">Economics</option>
+        <option id="energy" value="energy">Energy</option>
+        <option id="finance" value="finance">Finance</option>
+        <option id="science" value="science">Science</option>
+        <option id="technology" value="technology">Technology</option>
+        </select>
+
+        <label for="news-language">Choose Language(s):</label>
+        <select name="news-language" id="news-language" multiple required>
+        <option value="af">Afrikaans</option>
+        <option value="ar">Arabic</option>
+        <option value="en" selected>English</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="hi">Hindu</option>
+        <option value="ja">Japanese</option>
+        <option value="es">Spanish</option>
+        </select>
+
+        <label for="news-country">Choose One, Several or No Country:</label>
+        <select name="news-country" id="news-country" multiple>
+        <option value="CA">Canada</option>
+        <option value="DE">Germany</option>
+        <option value="GB">Great Britain</option>
+        <option value="IN">India</option>
+        <option value="IE">Ireland</option>
+        <option value="JP">Japan</option>
+        <option value="ZA">South Africa</option>
+        <option value="US">U.S</option>
+        </select>
+
+      <input class="submit-button" type="submit">
+    </form>
+    <div id="news-table"></div>
+    <script src="browsernews.js"></script>
+</body>
+</html>
+
+
+
+
+
