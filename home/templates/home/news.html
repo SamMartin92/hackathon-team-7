@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends "home/base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
     <form id="news-form" method="POST">
-        {% csrf_token %}
         <label for="news-category">Choose a News Category:</label>
         <select name="news-category" id="news-category" required>
         <option id="business" value="business">Business</option>
@@ -46,9 +40,7 @@
       <input class="submit-button" type="submit">
     </form>
     <div id="news-table"></div>
-    <script src="browsernews.js"></script>
-</body>
-</html>
+{% endblock %}
 
 
 

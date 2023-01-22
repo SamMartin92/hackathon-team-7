@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.http import HttpResponse
 from .models import Income, Outlay, CATEGORIES
+from django.views.decorators.csrf import csrf_exempt
 from .forms import OutlayForm
 
 # Create your views here.
@@ -38,9 +40,11 @@ def secondary(request):
 def others(request):
     return render(request, 'home/others.html')
 
+@csrf_exempt
 def news(request):
     return render(request, 'home/news.html')
 
+@csrf_exempt
 def financedata(request):
     return render(request, 'home/financedata.html')
 
