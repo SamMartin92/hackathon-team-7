@@ -1,0 +1,20 @@
+<html style="margin: 0; height: 100%; width: 100%;">
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="margin: 0; height: 100%; width: 100%;">
+    
+    <div id="curve_chart" style="display: flex; height: 40%; width: auto;"></div>
+    <form id="currency-form" method="POST">
+        {% csrf_token %}
+      <input type="text" id="currencyOne"name="currencyOne" required>
+      <input type="text" id="currencyTwo" name="currencyTwo" required>
+      <input id="class" type="submit">
+    </form>
+    <script type="text/javascript" src="financedata.js"></script>
+  </body>
+</html>
