@@ -311,14 +311,56 @@ input[type="number"] {
   display: none;
 }
 
-.column > img {
+.column>img {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
 /************************************************** FAQ page */
+#faq {
+  width: 100%;
+  height: auto;
+  margin: 60px auto;
+}
 
+#faq h2{
+  text-align: center;
+  margin: 20px auto;
+}
+
+#container {
+  margin: auto 5%;
+}
+
+.drop-down {
+  background-color: #ceecd7;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #999;
+}
+
+.link {
+  background-color: #86c8bc;
+  font-size: 20px;
+  width: 100%;
+  color: black;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.drop-down:target .answer {
+  max-height: fit-content;
+}
 
 /************************************************** Media Queries */
 
