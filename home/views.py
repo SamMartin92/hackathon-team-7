@@ -17,3 +17,6 @@ def others(request):
 def news(request):
     return render(request, 'home/news.html')
 
+def financedata(request):
+    return render(request, 'home/financedata.html')
+

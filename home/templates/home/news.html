@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="news-form" method="POST">
-
+        {% csrf_token %}
         <label for="news-category">Choose a News Category:</label>
         <select name="news-category" id="news-category" required>
         <option id="business" value="business">Business</option>
