@@ -185,13 +185,16 @@ a.button is-primary {
 /************************************************** income form */
 
 .income-form {
-  background-color: rgb(191, 228, 152);
+  background-color: #ceedc7;
   width: 80vw;
   max-width: 800px;
   min-height: 350px;
   text-align: center;
   padding: 60px 20px;
-  font-family: "Lora", serif;
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 10px;
 }
 
 h2 {
@@ -256,6 +259,10 @@ input[type="button"]:focus {
   background-color: rgb(20, 20, 144);
 }
 
+.income-sub-but {
+  background-color: #ffd4b2;
+}
+
 #info-link {
   text-decoration: none;
   color: rgb(76, 67, 193);
@@ -269,7 +276,7 @@ input[type="button"]:focus {
   background-color: #ceedc7;
   text-align: center;
   padding: 5%;
-  margin-top: 7%;
+  margin-top: 4%;
   text-align: left;
   font-family: 'Inter', sans-serif;
   border-radius: 10px;
@@ -296,6 +303,7 @@ input[type="button"]:focus {
 
 .log-but {
   background-color: #ffd4b2;
+  margin-top: 5px;
 }
 
 .login>p {
@@ -311,4 +319,8 @@ input[type="button"]:focus {
   height: 40px;
   border-radius: 5px;
   border: none;
+}
+
+#id_remember {
+  display: none;
 }
