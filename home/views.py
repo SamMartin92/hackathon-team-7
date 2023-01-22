@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -14,9 +16,11 @@ def secondary(request):
 def others(request):
     return render(request, 'home/others.html')
 
+@csrf_exempt
 def news(request):
     return render(request, 'home/news.html')
 
+@csrf_exempt
 def financedata(request):
     return render(request, 'home/financedata.html')
 
