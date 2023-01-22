@@ -81,37 +81,37 @@ a.button is-primary {
   background-color: #ceedc7;
   margin: 30px;
   display: flex;
-  height: 500px;
+  max-height: 500px;
   flex-direction: column;
 }
 
 .hero-text {
-  float: left;
-  background-color: #86c8bca3;
+  background-color: #86c8bcd7;
   margin: 20px;
   min-width: fit-content;
-  height: fit-content;
-
+  max-height: fit-content;
+  position: absolute;
   padding: 20px 10px 20px 10px;
   border-radius: 5px;
+  top: 0;
 }
 
 .title {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 3vw;
+  line-height: 44pt;
 }
 
 .subtitle {
   font-family: 'Inter', sans-serif;
+  font-size: 1.5vw;
 }
 
 /*home page*/
+
 .hero-image {
-  background: url('globe.jpg');
-  background-color: #ffd4b2;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .info-heading {
@@ -148,13 +148,18 @@ a.button is-primary {
 .service-button {
   width: 100%;
   height: -webkit-fill-available;
-  padding: 15px 25px;
+  padding: 5px 15px;
   background-color: ivory;
   cursor: pointer;
   outline: none;
   border-color: bisque;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+}
+
+.info-img {
+  aspect-ratio: 2/1;
+  object-fit: contain;
 }
 
 .service-button:hover,
@@ -240,24 +245,6 @@ input[type="number"] {
   font-size: 110%;
 }
 
-input[type="button"] {
-  width: 150px;
-  height: 35px;
-  border-radius: 20px;
-  font-size: 110%;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: rgb(38, 107, 12);
-  color: white;
-  border: 2px solid rgb(46, 47, 45);
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-input[type="button"]:hover,
-input[type="button"]:focus {
-  background-color: rgb(20, 20, 144);
-}
 
 .income-sub-but {
   background-color: #ffd4b2;
@@ -323,4 +310,26 @@ input[type="button"]:focus {
 
 #id_remember {
   display: none;
+}
+
+.column > img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/************************************************** Media Queries */
+
+@media screen and (max-width: 415px) {
+  .hero-text {
+    padding: 10px;
+  }
+
+  .title {
+    line-height: 26pt;
+  }
+
+  .hero-body {
+    padding: 24px 24px 24px 24px;
+  }
 }
