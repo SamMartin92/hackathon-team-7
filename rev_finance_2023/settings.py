@@ -36,7 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'hackathon-finrev-2023.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-sammartin92-hackathonte-d6e864uss3c.ws-eu83.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-sammartin92-hackathonte-q8t40l4bms7.ws-eu83.gitpod.io']
 
 SITE_ID = 1
 

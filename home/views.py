@@ -31,7 +31,7 @@ def news(request):
 def financedata(request):
     return render(request, 'home/financedata.html')
 
-def index_expense(request):
+def view_expenses(request):
     expenses = Expense.objects.filter(owner=request.user)
     categories = Category.objects.all() 
     
@@ -40,7 +40,7 @@ def index_expense(request):
         'expenses': expenses
         
     }
-    return render(request, 'home/index-expense.html', context)
+    return render(request, 'home/view_expenses.html', context)
 
 def add_expense(request):
     categories = Category.objects.all()
@@ -81,7 +81,7 @@ def add_expense(request):
                                category=category, description=description)
         messages.success(request, 'Expense saved successfully')
 
-        return redirect('index_expense')
+        return redirect('view_expenses')
 
 def expense_edit(request, id):
     expense = Expense.objects.get(pk=id)
@@ -115,10 +115,10 @@ def expense_edit(request, id):
 
         expense.save()
         messages.success(request, 'Expense updated  successfully')
-    return redirect('index_expense')
+    return redirect('view_expenses')
 
 def delete_expense(request, id):
     expense = Expense.objects.get(pk=id)
     expense.delete()
     messages.success(request, 'Expense removed')
-    return redirect('index_expense')
+    return redirect('view_expenses')
