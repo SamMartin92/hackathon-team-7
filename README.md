@@ -24,15 +24,18 @@
   * [Acknowledgements](#acknowledgements)
 ​
 ## User Experience
-We wanted the user to easily plan out their holiday by using our budgeting app. It also shows the currency exchange rates to the user so they know how much currency they'd have to take. Plannning for this in advance would help the user be more prepared and stress-free about their money. 
+We wanted the user to easily plan out their holiday by using our budgeting app. It also shows the currency exchange rates to the user so they know how much currency they'd have to take with them. Planning for this in advance would help the user be more prepared and stress-free about their money. They can keep a track of their income and expenses by using this app.
 ​
 ### User stories
-<< user stories here - don't be stingy on this 😅 you can even put down your expectations as a developer in this forum >>
+- **As a user** I want to understand how to manage my income **so that** I am handling my expenses more efficiently.
+- **As a user**, I want help budgeting with the 50:30:20 rule **so that** I can keep my finances in order.
+- **As a user** I want to track my expenses on a monthly basis **so that** I can see how much I spend each month.
+- **As a user** I want to keep up to date with the  latest news in my region **so that** I am aware of current events, especially those related to business and finance.
 ​
 ## Technology:
 
 
-### << languages >>
+### Languages:
   * Python, for basic Django framework, user login and database management
   * Javascript, for the Newscatcher API, Alphavantage API's and some frontend rendering
   * HTML
@@ -66,36 +69,41 @@ wether it'd be planning a budget, view stocks, currency or financial related new
 ### Color Scheme:
 We chose a very neutral color palete to give the webpage a professional look. 
 
-![color](/static/images/colour-palette.png)
-![Colour Palatte](/static/images/color.png)
+![color](/documentation/colour-palette.png)
+![Colour Palatte](/documentation/color.png)
 ​
 ### Typography:
-<< what font pairings did your team consider and pick? And why? >>
+We chose the following fonts for this hackathon project:
+- Josefin Sans
+
+![Josefin-sans](/documentation/josefin-sans.png)
 ​
+- Noto Serif
+
+![Noto Serif](/documentation/noto-serif.png)
+
+- Inter
+
+![Inter](/documentation/inter.png)
+
 ### Imagery:
-<< Detail imagery used to compliment your build & theme >>
-​
-<< ensure source attribution is maintained, and that you have used copyright free material >>
-​
+- The images on the page were taken from [pexels](https://www.pexels.com/) which is a free stock images page.
+
+![Cover picture](/documentation/cover-image.png)
+![Attractions photos](/documentation/stock-photos.png)
+
 ### Wireframes:
 ​
-<details>
-<summary>- Mobile Wireframes:</summary>
+- Mobile Wireframes:
+
+​![mobile wireframe](/documentation/mobile-version.jpg)
+
+- Desktop Wireframes:
 ​
-<< put all your mobile wireframes here... >>
+
+​![Desktop Wirframes](/documentation/desktop-version.jpg)
 ​
-<< consider adding some notes to detail the planned components or functionality >>
-​
-</details>
-​
-<details>
-<summary>- Desktop Wireframes:</summary>
-​
-<< put all your mobile wireframes here... >>
-​
-<< consider adding some notes to detail the planned components or functionality >>
-​
-</details>
+The cover image gives a basic understanding of what the site is about and to explain this further, we have added an 'Our Purpose" section. Then we have an "Our Services" section which shows what this site can be used for. The boxes in this section are buttons which take the user to the related page. 
 ​
 ## Deployment
 << detail deployment methods used here, and any extraneous circumstances to run the project locally >>
