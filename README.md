@@ -23,14 +23,13 @@
   * [Acknowledgements](#acknowledgements)
 ​
 ## User Experience
-<< what paradigms of user experience did you consider, and cater to? >>
+We wanted the user to easily plan out their holiday by using our budgeting app. It also shows the currency exchange rates to the user so they know how much currency they'd have to take. Plannning for this in advance would help the user be more prepared and stress-free about their money. 
 ​
 ### User stories
-<< user stories here - don't be stingy on this 😅 you can even put down your expectations as a developer in this forum >>
+- As a user, we wanted to make the site simple so it's easy to read and understand for anyone using it.
+- As a user, we would like 
 ​
 ## Technology:
-
-
 ### << languages >>
   * Python, for basic Django framework, user login and database management
   * Javascript, for the Newscatcher API, Alphavantage API's and some frontend rendering
