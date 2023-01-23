@@ -114,14 +114,20 @@ The cover image gives a basic understanding of what the site is about and to exp
 ## Credits
 ​
 ### Code
-<< any and all code that isn't yours...must go here >>
+- Some of the styling inspiration for the FAQ page was taken from this [youtube link](https://www.youtube.com/watch?v=MXrtXg1kpVs&t=412s).
 ​
 ### Content
-<< any content, such as facts/references/text that isn't yours...must go here >>
+ - The inforamtion to the 50/30/20 budgeting rule was taken form this [link](https://www.thebalancemoney.com/the-50-30-20-rule-of-thumb-453922).
 ​
 ### Media
-<< you may have already done this above in the Imagery section, but just in case, please attribute Media acquisition here >>
-​
+- The images for the home page were taken from [Pexels](https://www.pexels.com/).
+
 ### Acknowledgements
 
-<< personal thanks and praise 🙌 >>
+- Thank you to all the team member for the hard work and cooperation.
+  - Edmir- [GitHub Link](https://github.com/Edmir-Demaj)
+  - Fatima- [GitHub Link](https://github.com/fatimaqais)
+  - Sam- [GitHub Link](https://github.com/SamMartin92)
+  - Carl- [Github Link](https://github.com/carl2087)
+  - Jim- [GitHub Link](https://github.com/Enquil)
+  - Bogdan- [GitHub Link](https://github.com/BogdanFSD)
