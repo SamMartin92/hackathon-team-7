@@ -36,12 +36,13 @@
   * Javascript, for the Newscatcher API, Alphavantage API's and some frontend rendering
   * HTML
   * CSS
-​
+
+
 * << tools and frameworks >>
   * Django, Python Framework
   * JQuery, JavaScript Framework
   * Bulma, CSS framework
-​
+
 
 ## Initial MVP idea
 
