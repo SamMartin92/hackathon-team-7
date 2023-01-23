@@ -2,8 +2,7 @@
 ​
 ## Team Name: **Deadline Chasing Devs**
 ​
-[Link to Deployed Project](https://git.heroku.com/hackathon-finrev-2023.git
-)
+[Link to Deployed Project](https://hackathon-finrev-2023.herokuapp.com/)
 ​
 ## Contents
 ​
@@ -24,7 +23,7 @@
   * [Acknowledgements](#acknowledgements)
 ​
 ## User Experience
-We wanted the user to easily plan out their holiday by using our budgeting app. It also shows the currency exchange rates to the user so they know how much currency they'd have to take with them. Planning for this in advance would help the user be more prepared and stress-free about their money. They can keep a track of their income and expenses by using this app.
+We wanted the user to easily plan out their holiday by using our budgeting app. Budgeting their monthly expenses and income would help the user be more prepared and stress-free about their money. They can use the app to keep track of their monthly spending. 
 ​
 ### User stories
 - **As a user** I want to understand how to manage my income **so that** I am handling my expenses more efficiently.
@@ -33,7 +32,6 @@ We wanted the user to easily plan out their holiday by using our budgeting app. 
 - **As a user** I want to keep up to date with the  latest news in my region **so that** I am aware of current events, especially those related to business and finance.
 ​
 ## Technology:
-
 
 ### Languages:
   * Python, for basic Django framework, user login and database management
@@ -56,20 +54,16 @@ The initial idea was to make a budget-planner where you could input income / exp
 We ended up doing a more general finance thing that can sort of aggregate a lot of different tools depending on what you're interested in,
 wether it'd be planning a budget, view stocks, currency or financial related news.
 ​
-<< consider talking about how you planned as a team here and what tools were implemented >>
-​
 ### Actual idea & content:
 ​
-<< how does you final product/project match up to your initial mvp plans >>​
-
-<< detail idea / features / functionality here >>
+We made a budgeting app which also allows the user to check the latest finance and economy news. It helps the user track their expenses and saves them in the account they've signed up with so the data is not lost once they exit the site.
 ​
 ## Design
 ​
 ### Color Scheme:
-We chose a very neutral color palete to give the webpage a professional look. 
+We chose a very neutralcolourr palete to give the webpage a professional look. 
 
-![color](/documentation/colour-palette.png)
+![colour](/documentation/colour-palette.png)
 ![Colour Palatte](/documentation/color.png)
 ​
 ### Typography:
@@ -112,7 +106,6 @@ The cover image gives a basic understanding of what the site is about and to exp
 << detail testing logs here - any known bugs, and squashed bugs 🐛🐛 >>
 ​
 ## Credits
-​
 ### Code
 - Some of the styling inspiration for the FAQ page was taken from this [youtube link](https://www.youtube.com/watch?v=MXrtXg1kpVs&t=412s).
 ​
