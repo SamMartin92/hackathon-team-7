@@ -55,7 +55,10 @@ Detail plans and scope of project here....
 ## Design
 ​
 ### Color Scheme:
-<< detail your color palette here >>
+We chose a very neutral color palete to give the webpage a professional look. 
+
+![color](/static/images/colour-palette.png)
+![Colour Palatte](/static/images/color.png)
 ​
 ### Typography:
 << what font pairings did your team consider and pick? And why? >>
