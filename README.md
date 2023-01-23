@@ -133,7 +133,11 @@ The cover image gives a basic understanding of what the site is about and to exp
 5. Push changes and deploy.
 ​
 ## Testing
-<< detail testing logs here - any known bugs, and squashed bugs 🐛🐛 >>
+A number of manual tests were carried out on this porject:
+- User authentication: User sign up and login was tested successfully
+- Javascript 50:30:20 on Budget tool was tested to ensure no errors. Worked successfully
+- Track Expenses app was tested for full CRUD functionality. Users can add, Edit, Delete and Display monthly expenses
+- News API was tested by making calls and ensuring news displayed on page, this was done successfully and API key was acceped
 ​
 ## Credits
 ### Code
