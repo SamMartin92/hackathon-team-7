@@ -16,56 +16,61 @@
       </nav> -->
     <!-- </div>  -->
 
-    <div class="col-md-2 container">
-      <h2>Keep track of your Expenses:</h2>
-      <a href="{% url 'add_expense' %}" class="btn btn-primary"><p>Add Expense</p></a>
+    <div class="col-md-2 container" style="padding: 30px;
+    text-align: center;">
+      <h2>Keep track of this month's Expenses:</h2>
+      <a href="{% url 'add_expense' %}" class="button is-success"><p>Add Expense</p></a>
     </div>
   </div>
 
-  <div class="container">
-    {% include 'home/_messages.html' %} {% if expenses.count %}
 
-    <div class="row">
-      <div class="col-md-8"></div>
-      <div class="col-md-4">
+<div class="container">
+<div class="card">
+  <div class="card-content">
+    <div class="content">
+        {% include 'home/_messages.html' %} {% if expenses.count %}
+    
+        <div class="app-table">
 
+          <table class="table is-stripped is-hoverable is-info">
+            <thead>
+              <tr>
+                <th>Amount </th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th></th>
+              </tr>
+            </thead>
         
-      </div>
-    </div>
-<div class="app-table">
-
-  <table class="table is-stripped is-hoverable is-info">
-    <thead>
-      <tr>
-        <th>Amount </th>
-        <th>Category</th>
-        <th>Description</th>
-        <th>Date</th>
-        <th></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      {% for expense in expenses %}
-      <tr>
-        <td>{{expense.amount}}</td>
-        <td>{{expense.category}}</td>
-        <td>{{expense.description}}</td>
-        <td>{{expense.date}}</td>
-
-        <td>
-          <a
-            href="{% url 'expense-edit' expense.id  %}"
-            class="button is-small is-info"
-            >Edit</a
-          >
-        </td>
-      </tr>
-
-      {% endfor %}
-    </tbody>
-  </table>
+            <tbody>
+              {% for expense in expenses %}
+              <tr>
+                <td>{{expense.amount}}</td>
+                <td>{{expense.category}}</td>
+                <td>{{expense.description}}</td>
+                <td>{{expense.date}}</td>
+        
+                <td>
+                  <a
+                    href="{% url 'expense-edit' expense.id  %}"
+                    class="button is-small is-info"
+                    >Edit</a
+                  >
+                </td>
+              </tr>
+        
+              {% endfor %}
+            </tbody>
+          </table>
+          <div style="margin:20px;">
+          <h4>This month's total expenses: €{{ month_total }}</h4>
+          </div>
+        </div>
 </div>
+</div>
+
+
 
     
 {% endif %}

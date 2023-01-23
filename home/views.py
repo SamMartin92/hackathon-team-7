@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from .models import Income, Outlay, Category, Expense, CATEGORIES
 from django.views.decorators.csrf import csrf_exempt
@@ -31,17 +32,23 @@ def news(request):
 def financedata(request):
     return render(request, 'home/financedata.html')
 
+@login_required
 def view_expenses(request):
     expenses = Expense.objects.filter(owner=request.user)
-    categories = Category.objects.all() 
-    
+    categories = Category.objects.all()
+    items = [] 
+    total = list(Expense.objects.filter(owner=request.user).values_list('amount'))
+    for item in total:
+        items.append(item[0])
+    month_total= sum(items)
 
     context = {
-        'expenses': expenses
-        
+        'expenses': expenses,
+        'month_total': month_total     
     }
     return render(request, 'home/view_expenses.html', context)
 
+@login_required
 def add_expense(request):
     categories = Category.objects.all()
     currency = Expense.objects.all()
@@ -83,6 +90,7 @@ def add_expense(request):
 
         return redirect('view_expenses')
 
+@login_required
 def expense_edit(request, id):
     expense = Expense.objects.get(pk=id)
     categories = Category.objects.all()
@@ -117,6 +125,7 @@ def expense_edit(request, id):
         messages.success(request, 'Expense updated  successfully')
     return redirect('view_expenses')
 
+@login_required
 def delete_expense(request, id):
     expense = Expense.objects.get(pk=id)
     expense.delete()
