@@ -1,11 +1,27 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.timezone import now
 
 CATEGORIES = (
     ('Primary', 'Primary'),
     ('Secondary', 'Secondary'),
     ('Saving', 'Saving'),
 )
+
+CURRENCY_CHOICES = [
+    ("KWD", "KWD"),
+    ("BHD", "BHD"),
+    ("OMR", "OMR"),
+    ("JOD", "JOD"),
+    ("GBP", "GBP"),
+    ("KYD", "KYD"),
+    ("EUR", "EUR"),
+    ("CHF", "CHF"),
+    ("USD", "USD"),
+    ("CAD", "CAD")
+]
+
+
 class Income(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     income = models.IntegerField(default=0)
@@ -21,6 +37,31 @@ class Outlay(models.Model):
 
     # def __str__(self):
     #     return self.title
+
+
+class Expense(models.Model):
+    amount = models.FloatField()
+    date = models.DateField(default=now)
+    description = models.TextField()
+    owner = models.ForeignKey(to=User, on_delete=models.CASCADE)
+    category = models.CharField(max_length=266)
+    currency = models.CharField(max_length=10, choices=CURRENCY_CHOICES)
+
+    def __str__(self):
+        return self.category
+
+    class Meta:
+        ordering: ['-date']
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=255)
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+    def __str__(self):
+        return self.name
 
 
 
