@@ -23,7 +23,7 @@
   <div class="card">
     <div class="card-body">
       <form action="{% url 'expense-edit' expense.id %}" method="post">
-        {% include 'home/_messages.html'%} {% csrf_token %}
+         {% csrf_token %}
         <div class="form-group">
           <label for="">Amount</label>
           <input
