@@ -1,0 +1,127 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+ <!-- <div class="container mt-4"> -->
+  <!-- <div class="row">
+    <div class="col-md-10">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">
+            My Expenses
+          </li>
+        </ol>
+      </nav> -->
+    <!-- </div>  -->
+
+    <div class="col-md-2 container" style="padding: 30px;
+    text-align: center;">
+      <h2>Keep track of this month's Expenses:</h2>
+      <a href="{% url 'add_expense' %}" class="button is-success"><p>Add Expense</p></a>
+    </div>
+  </div>
+
+
+<div class="container">
+<div class="card">
+  <div class="card-content">
+    <div class="content">
+      {% if expenses.count %}
+    
+        <div class="app-table">
+
+          <table class="table is-stripped is-hoverable is-info">
+            <thead>
+              <tr>
+                <th>Amount </th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th></th>
+              </tr>
+            </thead>
+        
+            <tbody>
+              {% for expense in expenses %}
+              <tr>
+                <td>{{expense.amount}}</td>
+                <td>{{expense.category}}</td>
+                <td>{{expense.description}}</td>
+                <td>{{expense.date}}</td>
+        
+                <td>
+                  <a
+                    href="{% url 'expense-edit' expense.id  %}"
+                    class="button is-small is-info"
+                    >Edit</a
+                  >
+                </td>
+              </tr>
+        
+              {% endfor %}
+            </tbody>
+          </table>
+          <div style="margin:20px;">
+          <h4>This month's total expenses: €{{ month_total }}</h4>
+          </div>
+        </div>
+</div>
+</div>
+
+
+
+    
+{% endif %}
+  </div>
+</div>
+{% endblock content %}
+{% block postloadjs %}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  // Functions to open and close a modal
+  function openModal($el) {
+    $el.classList.add('is-active');
+  }
+
+  function closeModal($el) {
+    $el.classList.remove('is-active');
+  }
+
+  function closeAllModals() {
+    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+      closeModal($modal);
+    });
+  }
+
+  // Add a click event on buttons to open a specific modal
+  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+    const modal = $trigger.dataset.target;
+    const $target = document.getElementById(modal);
+
+    $trigger.addEventListener('click', () => {
+      openModal($target);
+    });
+  });
+
+  // Add a click event on various child elements to close the parent modal
+  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+    const $target = $close.closest('.modal');
+
+    $close.addEventListener('click', () => {
+      closeModal($target);
+    });
+  });
+
+  // Add a keyboard event to close all modals
+  document.addEventListener('keydown', (event) => {
+    const e = event || window.event;
+
+    if (e.keyCode === 27) { // Escape key
+      closeAllModals();
+    }
+  });
+});
+</script>
+{% endblock %}

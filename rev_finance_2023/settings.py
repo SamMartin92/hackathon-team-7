@@ -12,8 +12,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 import dj_database_url
 from pathlib import Path
+from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -34,7 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'hackathon-finrev-2023.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-sammartin92-hackathonte-wmywadak130.ws-eu83.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-sammartin92-hackathonte-q8t40l4bms7.ws-eu83.gitpod.io']
 
 SITE_ID = 1
 
@@ -44,6 +46,15 @@ AUTHENTICATION_BACKENDS = (
     # `allauth` specific authentication methods, such as login by e-mail
     "allauth.account.auth_backends.AuthenticationBackend"
 )
+
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'is-dark',
+    messages.INFO: 'is-info',
+    messages.SUCCESS: 'is-success',
+    messages.WARNING: 'is-warning',
+    messages.ERROR: 'is-danger',
+}
 
 
 # Application definition

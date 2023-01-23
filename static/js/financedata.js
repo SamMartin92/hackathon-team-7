@@ -28,8 +28,8 @@ function displayNumbers(cleanData, currencyOne, currencyTwo) {
     // create array for Date and Opening Value of currency relative to 'convert from' currency
     let dateArray = [];
     let numArray = [];
-    // Set start and targetNums, this changes depending on day because of how data is returned from API
-    let startNum = 1;
+    // Set start and targetNums, this changes depending on day because of how data is returned from API and forex opens 22 pm on ???sunday???
+    let startNum = 0;
     let targetNum = 138;
     // Get today as a Num, set startNum and targetNum depending on day of the week
     // newDate represents the date from which the function should start collecting data
@@ -77,4 +77,65 @@ function drawChart(dataPoints, currencyOne, currencyTwo) {
     let chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
     chart.draw(data, options);
+}
+
+
+const form = document.getElementById('news-form');
+form.addEventListener('submit', getParameters);
+
+//sets url according to selected parameters in the news-form
+function getParameters(event) {
+    event.preventDefault();
+    // let countryArr = [];
+    // let langArr = [];
+    let category = document.getElementById("news-category").value;
+    let country = document.getElementById('news-country').value;
+    let language = document.getElementById("news-language").value;
+    // langArr.push(language);
+    // countryArr.push(country);
+    // console.log(langArr, countryArr, category);
+    // console.log(langArr.toString());
+    // for (let i = 0; i < language.length; i++) {
+    //     langArr.push(language[i].value);
+    // }
+    // if (country.length > 0) {
+    //     for (let i = 0; i < country.length; i++){
+    //         countryArr.push(country[i].value);
+    //     }
+        let url = `https://api.newscatcherapi.com/v2/latest_headlines?lang=${language}&countries=${country}&topic=${category}&when=1h`;
+        getNews(url);
+    // } else {
+    //     for (let i = 0; i < language.length; i++){
+    //     console.log(category);
+    //     console.log(langArr.toString());
+    //     }
+    //     let url = `https://api.newscatcherapi.com/v2/latest_headlines?lang=${langArr.toString()}&topic=${category}&when=1h`;
+    //     getNews(url);
+    // }
+    
+}
+
+// request to the newscatcher api with url
+async function getNews(url) {
+    const options = {
+        method: 'GET',
+        headers: {
+            'x-api-key': 'vQNwRajERWFWP-ePSGXHZJiQj60UgbgupvI32qO4Sg0'
+        }
+        };
+    const response = await fetch(url, options);
+    let data = await response.json();
+    // gets the news-table, clears any previous content and populates it with the hits from the fetch
+    let newsTable = document.getElementById("news-table");
+    while(newsTable.firstChild){
+        newsTable.removeChild(newsTable.firstChild);
+    }
+    for (let i = 0; i < data.total_hits - 1; i++){
+        newsTable.innerHTML += `<div class="news-div"><h2 class="news-table-header">${data.articles[i].title}</h2>
+                                <p class="news-table-para">By: ${data.articles[i].author}, ${data.articles[i].published_date}</p>
+                                <p class="news-table-para">${data.articles[i].excerpt}</p>
+                                <p class="news-table-para">${data.articles[i].summary}</p>
+                                <p class="news-table-para">Rights: ${data.articles[i].rights}</p>
+                                <h3 class="news-table-link"><a href="${data.articles[i].link}" target="_blank">FULL ARTICLE HERE</a></h3></div>`;
+    }
 }
