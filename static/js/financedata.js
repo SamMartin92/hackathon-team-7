@@ -28,8 +28,8 @@ function displayNumbers(cleanData, currencyOne, currencyTwo) {
     // create array for Date and Opening Value of currency relative to 'convert from' currency
     let dateArray = [];
     let numArray = [];
-    // Set start and targetNums, this changes depending on day because of how data is returned from API
-    let startNum = 1;
+    // Set start and targetNums, this changes depending on day because of how data is returned from API and forex opens 22 pm on ???sunday???
+    let startNum = 0;
     let targetNum = 138;
     // Get today as a Num, set startNum and targetNum depending on day of the week
     // newDate represents the date from which the function should start collecting data
