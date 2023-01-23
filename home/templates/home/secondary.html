@@ -1,44 +1,79 @@
-{% extends "home/base.html" %}
+{% extends 'home/base.html' %}
+{% load static %}
+
+
 
 {% block content %}
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-10">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="">Expenses</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            My Expenses
+          </li>
+        </ol>
+      </nav>
+    </div>
 
-
-<button class="js-modal-trigger" data-target="modal-js-example">
-    Add Outlay
-  </button>
-
-
-  <div id="modal-js-example" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Add Outlay</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <form method= "POST" action="">
-            {% csrf_token %}
-            <label for="title">Title</label>
-            <input name="title" id="title">
-    
-            <label for="amount">Amount</label>
-            <input name="amount" id="amount">
-    
-            <select name="category">
-                <option value="Primary">Primary</option>
-                <option value="Secondary">Secondary</option>
-                <option value="Saving">Saving</option>
-            </select>
-          </form>
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success" >Add</button>
-        <button class="button">Cancel</button>
-      </footer>
+    <div class="col-md-2">
+      <a href="{% url 'add_expense' %}" class="btn btn-primary">Add Expense</a>
     </div>
   </div>
-{% endblock %}
 
+  <div class="container">
+    {% include 'home/_messages.html' %} {% if expenses.count %}
+
+    <div class="row">
+      <div class="col-md-8"></div>
+      <div class="col-md-4">
+
+        
+      </div>
+    </div>
+<div class="app-table">
+
+  <table class="table is-stripped is-hoverable is-info">
+    <thead>
+      <tr>
+        <th>Amount </th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for expense in expenses %}
+      <tr>
+        <td>{{expense.amount}}</td>
+        <td>{{expense.category}}</td>
+        <td>{{expense.description}}</td>
+        <td>{{expense.date}}</td>
+
+        <td>
+          <a
+            href="{% url 'expense-edit' expense.id  %}"
+            class="button is-small is-info"
+            >Edit</a
+          >
+        </td>
+      </tr>
+
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+    
+{% endif %}
+  </div>
+</div>
+{% endblock content %}
 {% block postloadjs %}
 <script>
     document.addEventListener('DOMContentLoaded', () => {
