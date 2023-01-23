@@ -29,27 +29,34 @@
 << user stories here - don't be stingy on this 😅 you can even put down your expectations as a developer in this forum >>
 ​
 ## Technology:
-​
-<< Detail your techstack here, and why you chose it. >>
-​
-<< list your languages & tools below: >>
-​
+
+
 *  << languages >>
-	* << list the langauge & reason for using it >>
+	* Python, for basic Django framework, user login and database management
+  * Javascript, for the Newscatcher API, Alphavantage API's and some frontend rendering
+  * HTML
+  * CSS
 ​
-* << tools >>
-  * << list the tool & reason for using it >>
+* << tools and frameworks >>
+  * Django, Python Framework
+  * JQuery, JavaScript Framework
+  * Bulma, CSS framework
 ​
-## Initial MVP idea:
-​
-Detail plans and scope of project here....
+
+## Initial MVP idea
+
+### Initial Idea
+
+The initial idea was to make a budget-planner where you could input income / expense / target sum to plan things such as trips etc.
+We ended up doing a more general finance thing that can sort of aggregate a lot of different tools depending on what you're interested in,
+wether it'd be planning a budget, view stocks, currency or financial related news.
 ​
 << consider talking about how you planned as a team here and what tools were implemented >>
 ​
 ### Actual idea & content:
 ​
-<< how does you final product/project match up to your initial mvp plans >>
-​
+<< how does you final product/project match up to your initial mvp plans >>​
+
 << detail idea / features / functionality here >>
 ​
 ## Design
