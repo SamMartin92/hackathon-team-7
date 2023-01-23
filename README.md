@@ -1,10 +1,11 @@
-# <<website_name>>
+# HelpSavvy Financial
 ​
-## Team Name: <<team_name>>
+## Team Name: **Deadline Chasing Devs**
 ​
-[Link to Deployed Project](<<add_deployed_link_to_project_here>>)
+[Link to Deployed Project](https://git.heroku.com/hackathon-finrev-2023.git
+)
 ​
-## Contents(#contents)
+## Contents
 ​
 * [User Experience (UX)](#user-experience)
   * [User Stories](#user-stories)
@@ -26,10 +27,11 @@
 We wanted the user to easily plan out their holiday by using our budgeting app. It also shows the currency exchange rates to the user so they know how much currency they'd have to take. Plannning for this in advance would help the user be more prepared and stress-free about their money. 
 ​
 ### User stories
-- As a user, we wanted to make the site simple so it's easy to read and understand for anyone using it.
-- As a user, we would like 
+<< user stories here - don't be stingy on this 😅 you can even put down your expectations as a developer in this forum >>
 ​
 ## Technology:
+
+
 ### << languages >>
   * Python, for basic Django framework, user login and database management
   * Javascript, for the Newscatcher API, Alphavantage API's and some frontend rendering
@@ -37,7 +39,7 @@ We wanted the user to easily plan out their holiday by using our budgeting app. 
   * CSS
 
 
-### << tools and frameworks >>
+### Tools and Frameworks
   * Django, Python Framework
   * JQuery, JavaScript Framework
   * Bulma, CSS framework
