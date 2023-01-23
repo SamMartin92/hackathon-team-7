@@ -32,7 +32,7 @@
 
 
 *  << languages >>
-	* Python, for basic Django framework, user login and database management
+  * Python, for basic Django framework, user login and database management
   * Javascript, for the Newscatcher API, Alphavantage API's and some frontend rendering
   * HTML
   * CSS
