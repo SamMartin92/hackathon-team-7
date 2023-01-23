@@ -1,8 +1,9 @@
-# <<website_name>>
+# HelpSavvy Financial
 ​
-## Team Name: <<team_name>>
+## Team Name: Deadline Chasing Devs
 ​
-[Link to Deployed Project](<<add_deployed_link_to_project_here>>)
+[Link to Deployed Project](https://git.heroku.com/hackathon-finrev-2023.git
+)
 ​
 ## Contents(#contents)
 ​
@@ -26,7 +27,9 @@
 << what paradigms of user experience did you consider, and cater to? >>
 ​
 ### User stories
-<< user stories here - don't be stingy on this 😅 you can even put down your expectations as a developer in this forum >>
+- **As a user** I want to understand how to manage my income **so that** I am handling my expenses more efficiently.
+- **As a user** I want to track my expenses on a monthly basis **so that** I can see how much I spend each month.
+- **As a user** I want to keep up to date with the  latest news in my region **so that** I am aware of current events, especially those related to business and finance.
 ​
 ## Technology:
 
