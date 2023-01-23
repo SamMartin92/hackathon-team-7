@@ -1,6 +1,6 @@
 {% extends "home/base.html" %}
 
-{% block title %}Primary{% endblock %}
+{% block title %}Budget{% endblock %}
 
 {% block content %}
 <div class="income-form">
@@ -60,10 +60,47 @@
         per month (rounded value +-)
       </p>
     </div>
+    <label id="label" for="userExpenses1">Your Primary Expenses: </label>
+    <input type="number" name="userExpenses1" id="userExpenses1" />
+    <div>
+      <p>
+        Primary are those bills that you absolutely must pay and are the things
+        necessary for survival. These expenses can include rent or mortgage
+        payments, car payments, groceries, insurance, health care, minimum debt
+        payment, and utilities. Please provide total of them per month (rounded
+        value +-)
+      </p>
+    </div>
+    <br />
+    <label id="label" for="userExpenses2">Your Secondary Expenses: </label>
+    <input type="number" name="userExpenses2" id="userExpenses2" />
+    <div>
+      <p>
+        Secondary expenses or “wants” should account for 30% of your income.
+        Anything from dining out, clothes shopping, Starbucks, your cable or
+        cell phone plan, travel, gifts, or a gym membership qualifies as a want.
+        In the grand scheme of things, these purchases may be important to you,
+        but they are optional costs.. Please provide total of them per month
+        (rounded value +-)
+      </p>
+    </div>
+    <br />
+    <label id="label" for="userExpenses3">Your Other Expenses: </label>
+    <input type="number" name="userExpenses3" id="userExpenses3" />
+    <br />
+    <div>
+      <p>
+        The remaining 20% of your income should go toward saving money. About
+        61% of people ages 25 to 34 have less than $1,000 saved. Saving can
+        include opening a deposit account to save for an emergency fund, a down
+        payment, vacation or any other larger goal. Please provide total of them
+        per month (rounded value +-)
+      </p>
+    </div>
     <input type="button" value="Submit" id="submit" />
-=======
+
     <input type="button" value="Submit" id="submit" class="button income-sub-but"/>
->>>>>>> main
+
   </form>
   <p id="info">
     <span id="notice">* </span>Notice that net income is your income after all
@@ -87,6 +124,7 @@
 <div id="message1"></div>
 <div id="message2"></div>
 <div id="message3"></div>
+
 
 {% endblock %}
 
