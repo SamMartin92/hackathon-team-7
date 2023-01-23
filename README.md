@@ -31,14 +31,14 @@
 ## Technology:
 
 
-*  << languages >>
+### << languages >>
   * Python, for basic Django framework, user login and database management
   * Javascript, for the Newscatcher API, Alphavantage API's and some frontend rendering
   * HTML
   * CSS
 
 
-* << tools and frameworks >>
+### << tools and frameworks >>
   * Django, Python Framework
   * JQuery, JavaScript Framework
   * Bulma, CSS framework
