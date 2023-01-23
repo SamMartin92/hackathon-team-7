@@ -24,7 +24,7 @@
   * [Acknowledgements](#acknowledgements)
 ​
 ## User Experience
-<< what paradigms of user experience did you consider, and cater to? >>
+We wanted the user to easily plan out their holiday by using our budgeting app. It also shows the currency exchange rates to the user so they know how much currency they'd have to take with them. Planning for this in advance would help the user be more prepared and stress-free about their money. They can keep a track of their income and expenses by using this app.
 ​
 ### User stories
 - **As a user** I want to understand how to manage my income **so that** I am handling my expenses more efficiently.
@@ -67,35 +67,43 @@ wether it'd be planning a budget, view stocks, currency or financial related new
 ## Design
 ​
 ### Color Scheme:
-<< detail your color palette here >>
+We chose a very neutral color palete to give the webpage a professional look. 
+
+![color](/documentation/colour-palette.png)
+![Colour Palatte](/documentation/color.png)
 ​
 ### Typography:
-<< what font pairings did your team consider and pick? And why? >>
+We chose the following fonts for this hackathon project:
+- Josefin Sans
+
+![Josefin-sans](/documentation/josefin-sans.png)
 ​
+- Noto Serif
+
+![Noto Serif](/documentation/noto-serif.png)
+
+- Inter
+
+![Inter](/documentation/inter.png)
+
 ### Imagery:
-<< Detail imagery used to compliment your build & theme >>
-​
-<< ensure source attribution is maintained, and that you have used copyright free material >>
-​
+- The images on the page were taken from [pexels](https://www.pexels.com/) which is a free stock images page.
+
+![Cover picture](/documentation/cover-image.png)
+![Attractions photos](/documentation/stock-photos.png)
+
 ### Wireframes:
 ​
-<details>
-<summary>- Mobile Wireframes:</summary>
+- Mobile Wireframes:
+
+​![mobile wireframe](/documentation/mobile-version.jpg)
+
+- Desktop Wireframes:
 ​
-<< put all your mobile wireframes here... >>
+
+​![Desktop Wirframes](/documentation/desktop-version.jpg)
 ​
-<< consider adding some notes to detail the planned components or functionality >>
-​
-</details>
-​
-<details>
-<summary>- Desktop Wireframes:</summary>
-​
-<< put all your mobile wireframes here... >>
-​
-<< consider adding some notes to detail the planned components or functionality >>
-​
-</details>
+The cover image gives a basic understanding of what the site is about and to explain this further, we have added an 'Our Purpose" section. Then we have an "Our Services" section which shows what this site can be used for. The boxes in this section are buttons which take the user to the related page. 
 ​
 ## Deployment
 << detail deployment methods used here, and any extraneous circumstances to run the project locally >>
@@ -106,14 +114,20 @@ wether it'd be planning a budget, view stocks, currency or financial related new
 ## Credits
 ​
 ### Code
-<< any and all code that isn't yours...must go here >>
+- Some of the styling inspiration for the FAQ page was taken from this [youtube link](https://www.youtube.com/watch?v=MXrtXg1kpVs&t=412s).
 ​
 ### Content
-<< any content, such as facts/references/text that isn't yours...must go here >>
+ - The inforamtion to the 50/30/20 budgeting rule was taken form this [link](https://www.thebalancemoney.com/the-50-30-20-rule-of-thumb-453922).
 ​
 ### Media
-<< you may have already done this above in the Imagery section, but just in case, please attribute Media acquisition here >>
-​
+- The images for the home page were taken from [Pexels](https://www.pexels.com/).
+
 ### Acknowledgements
 
-<< personal thanks and praise 🙌 >>
+- Thank you to all the team member for the hard work and cooperation.
+  - Edmir- [GitHub Link](https://github.com/Edmir-Demaj)
+  - Fatima- [GitHub Link](https://github.com/fatimaqais)
+  - Sam- [GitHub Link](https://github.com/SamMartin92)
+  - Carl- [Github Link](https://github.com/carl2087)
+  - Jim- [GitHub Link](https://github.com/Enquil)
+  - Bogdan- [GitHub Link](https://github.com/BogdanFSD)
